@@ -1,0 +1,46 @@
+ <!-- HOME BUTTON -->
+        <a href="!DOCTYPE2.html" class="home-btn">
+            🏠 Home
+        </a>
+
+<!-- QR CODE -->
+<div style="
+    text-align:center;
+    margin:40px auto;
+    padding:30px;
+    max-width:400px;
+    background:#11151f;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    color:white;
+    font-family:Arial,sans-serif;
+">
+    <h2>📱 Scan to Open Football Hub</h2>
+
+    <p style="color:#aab0c0; margin:12px 0 20px;">
+        Scan this QR code with your phone
+    </p>
+
+    <div id="qrcode" style="
+        background:white;
+        padding:15px;
+        display:inline-block;
+        border-radius:12px;
+    "></div>
+
+    <p style="margin-top:18px; font-size:14px; color:#aab0c0;">
+        FOOTBALL HUB — FQF
+    </p>
+</div>
+
+<!-- QR CODE LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: window.location.href,
+        width: 220,
+        height: 220,
+        correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
